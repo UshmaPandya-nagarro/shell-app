@@ -1,0 +1,28 @@
+.shell-container {
+  padding: 24px;
+  font-family: Arial, sans-serif;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.microfrontend-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.mfe-panel {
+  border: 2px solid #333;
+  min-height: 350px;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .microfrontend-layout {
+    grid-template-columns: 1fr;
+  }
+}
